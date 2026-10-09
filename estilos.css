@@ -1,0 +1,326 @@
+/* ===== ESTILOS GENERALES ===== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #f0f8ff;
+
+    margin: 0;
+
+    text-align: center;
+}
+
+
+
+/* ===== ENCABEZADO ===== */
+
+.encabezado {
+    background-color: #2c3e50;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 15px 30px;
+}
+
+
+
+/* ===== LOGO / NOMBRE ===== */
+
+.logo {
+    font-size: 22px;
+
+    font-weight: bold;
+}
+
+
+
+/* ===== MENÚ ===== */
+
+.menu {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+
+/* ===== ENLACES DEL MENÚ ===== */
+
+.menu a {
+    color: white;
+
+    text-decoration: none;
+
+    padding: 10px 15px;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+
+
+/* ===== ANIMACIÓN DEL MENÚ ===== */
+
+.menu a:hover {
+    background-color: #3498db;
+}
+
+
+
+/* ===== CONTACTO DESPLEGABLE ===== */
+
+.desplegable {
+    position: relative;
+}
+
+
+
+/* ===== SUBMENÚ ===== */
+
+.submenu {
+    display: none;
+
+    position: absolute;
+
+    top: 100%;
+
+    right: 0;
+
+    background-color: #2c3e50;
+
+    min-width: 150px;
+
+    border-radius: 8px;
+
+    padding: 5px;
+
+    z-index: 10;
+}
+
+
+
+/* ===== ENLACES DEL SUBMENÚ ===== */
+
+.submenu a {
+    display: block;
+
+    padding: 10px;
+}
+
+
+
+/* ===== MOSTRAR SUBMENÚ ===== */
+
+.desplegable:hover .submenu {
+    display: block;
+}
+
+
+
+/* ===== CONTENIDO ===== */
+
+.contenido {
+    padding: 20px;
+}
+
+
+
+/* ===== TÍTULO ===== */
+
+h1 {
+    color: #2c3e50;
+
+    animation: entradaTitulo 1s ease;
+}
+
+
+
+/* ===== ANIMACIÓN DEL TÍTULO ===== */
+
+@keyframes entradaTitulo {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(-30px);
+    }
+
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+
+}
+
+
+
+/* ===== SUBTÍTULOS ===== */
+
+h2 {
+    color: #3498db;
+}
+
+
+
+/* ===== CUADROS ===== */
+
+.cuadro {
+    background-color: white;
+
+    border: 3px solid #3498db;
+
+    border-radius: 10px;
+
+    padding: 20px;
+
+    margin: 15px auto;
+
+    max-width: 500px;
+
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s;
+
+    animation: aparecer 0.8s ease;
+}
+
+
+
+/* ===== ANIMACIÓN AL PASAR EL MOUSE ===== */
+
+.cuadro:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 2px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* ===== ANIMACIÓN DE ENTRADA ===== */
+
+@keyframes aparecer {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(30px);
+    }
+
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+
+}
+
+
+
+/* ===== IMÁGENES ===== */
+
+img {
+    border-radius: 10px;
+
+    border: 3px solid #2c3e50;
+
+    max-width: 100%;
+
+    transition: 0.3s;
+}
+
+
+
+/* ===== ANIMACIÓN DE LA IMAGEN ===== */
+
+img:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* ===== BOTONES ===== */
+
+button {
+    background-color: #3498db;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 25px;
+
+    font-size: 16px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    margin-top: 10px;
+
+    transition: 0.3s;
+}
+
+
+
+/* ===== ANIMACIÓN DEL BOTÓN ===== */
+
+button:hover {
+    transform: scale(1.1);
+
+    background-color: #2980b9;
+}
+
+
+
+/* ===== FOOTER ===== */
+
+footer {
+    background-color: #2c3e50;
+
+    color: white;
+
+    padding: 15px;
+
+    margin-top: 30px;
+}
+
+/* ===== BOTÓN PARA SUBIR ===== */
+
+.subir {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.subir:hover {
+    background-color: #2980b9;
+    transform: scale(1.1);
+}
